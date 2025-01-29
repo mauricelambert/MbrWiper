@@ -26,13 +26,15 @@ cd MbrWiper
 #### Windows
 
 ```bash
-gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fPIE -pie -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
+gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
+strip MbrWiper
 ```
 
 #### Linux
 
 ```bash
-gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
+gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
+strip MbrWiper.exe
 ```
 
 ## Usages
