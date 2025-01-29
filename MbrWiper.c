@@ -15,10 +15,10 @@
 */
 
 // Linux:
-// gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fPIE -pie -Wl,-z,relro,-z,now,-z,noexecstack -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper
+// gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper
 
 // Windows:
-// gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fPIE -pie -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
+// gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -104,7 +104,7 @@ int main() {
         return 2;   
     }
 
-    FILE *file = fopen(FILENAME, "w");
+    FILE *file = fopen(FILENAME, "rb+");
 
     if (file == NULL) {
         fputs("Error opening file", stderr);
