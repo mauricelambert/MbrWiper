@@ -32,7 +32,7 @@ gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fPIE -pie -Wall 
 #### Linux
 
 ```bash
-gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -fPIE -pie -Wl,-z,relro,-z,now,-z,noexecstack -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper
+gcc -march=native -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
 ```
 
 ## Usages
