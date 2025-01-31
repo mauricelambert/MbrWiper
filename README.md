@@ -56,8 +56,8 @@ MbrWiper.exe
 ## Links
 
  - [Github](https://github.com/mauricelambert/MbrWiper/)
- - [Github - Python Windows compiled executable](https://github.com/mauricelambert/MbrWiper/releases/latest/)
- - [SourceForce - Python Windows compiled executable](https://sourceforge.net/projects/MbrWiper/files/)
+ - [Github - compiled executable](https://github.com/mauricelambert/MbrWiper/releases/latest/)
+ - [SourceForce - compiled executable](https://sourceforge.net/projects/MbrWiper/files/)
 
 ## Licence
 
