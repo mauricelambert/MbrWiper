@@ -33,8 +33,8 @@ strip MbrWiper
 #### Linux
 
 ```bash
-gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper.exe
-strip MbrWiper.exe
+gcc -Wall -Wextra -Werror -O5 MbrWiper.c -o MbrWiper
+strip MbrWiper
 ```
 
 ## Usages
