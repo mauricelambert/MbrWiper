@@ -98,7 +98,7 @@ int main() {
         return 1;
     }
 
-    unsigned char random_bytes[512];
+    unsigned char random_bytes[1024];
     if (get_random_bytes(random_bytes, sizeof(random_bytes)) != 0) {
         fputs("Failed to generate random bytes.", stderr);
         return 2;   
@@ -111,9 +111,9 @@ int main() {
         return 3;
     }
 
-    size_t written = fwrite(random_bytes, 1, 512, file);
+    size_t written = fwrite(random_bytes, 1, 1024, file);
 
-    if (written != 512) {
+    if (written != 1024) {
         fputs("Error writing to file", stderr);
         return 3;
     }
